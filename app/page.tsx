@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import { CurrencyAmount, CurrencySwitcher } from "@/app/components/CurrencyProvider";
 import LanguageSwitcher from "@/app/components/LanguageSwitcher";
@@ -109,9 +109,18 @@ export default function Home() {
 
       <nav className="nav" aria-label="Navigazione principale">
         <a className="brand" href="#">
-          <span className="brand-mark"><Stud color="#fff" /><Stud color="#fff" />B</span>
-          <span>BRICKORIA<small>PLAY • BUILD • SMILE</small></span>
-        </a>
+  <Image
+    src="/logo.png"
+    alt="Brickoria"
+    width={85}
+    height={85}
+    className="brand-logo"
+  />
+  <span>
+    BRICKORIA
+    <small>PLAY • BUILD • SMILE</small>
+  </span>
+</a>
         <div className="nav-links"><a href="#catalogo">Shop</a><a href="#categorie">Categorie</a><a href="#chi-siamo">Chi siamo</a><button onClick={() => setGiftOpen(true)}>Consiglia regalo</button><a className="account-link" href="/account/">👤 Area clienti</a></div>
         <div className="nav-actions">
           <LanguageSwitcher />

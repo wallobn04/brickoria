@@ -72,11 +72,7 @@ h1 em,h2 em { color:var(--red); font-style:normal; }
   color:#151515;
   box-shadow:0 5px 0 #D8AE1F;
 }
-.button.gift-button{
-  background:#FFD54A;
-  color:#151515;
-  box-shadow:0 5px 0 #D8AE1F;
-}
+
 .button.gift:hover{
   transform:translateY(-2px);
 }
@@ -458,4 +454,10 @@ footer button { color:inherit; border:0; background:none; padding:0; font-weight
   background: #ffd54a !important;
   color: #151515 !important;
   box-shadow: 0 5px 0 #d8ae1f !important;
+}
+.brand-logo {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 12px;
 }
